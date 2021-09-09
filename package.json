@@ -9,19 +9,16 @@
   "scripts": {
     "start": "npm run build:dev-watch",
     "build:dev-watch": "tsc --watch",
-    "test:dev-watch": "mocha --require ts-node/register --watch --watch-extensions ts,spec.ts src/**/*.spec.ts",
-    "test": "mocha --require ts-node/register src/**/*.spec.ts"
+    "test:dev-watch": "npm run test -- --watch",
+    "test": "jest"
   },
   "author": "Xingchen Hong",
-  "dependencies": {
-  },
   "devDependencies": {
-    "@types/chai": "^4.1.2",
-    "@types/mocha": "^2.2.48",
-    "@types/node": "^8.9.4",
-    "chai": "^4.1.2",
-    "mocha": "^4.1.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.0",
+    "jest": "^27.1.1",
+    "ts-jest": "^27.0.5",
     "ts-node": "^4.1.0",
-    "typescript": "^2.7.1"
+    "typescript": "^4.4.2"
   }
 }

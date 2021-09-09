@@ -1,11 +1,9 @@
-import {
-  expect,
-} from 'chai';
-
 import lib from './index';
 
 describe('lib', () => {
   it('does something', async () => {
-    await lib();
+    const input = [];
+    const output = await lib(input);
+    expect(output).toBe(input);
   });
 });

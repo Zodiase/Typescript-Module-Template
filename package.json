@@ -2,12 +2,13 @@
     "name": "some-module",
     "version": "0.1.0",
     "description": "some description",
-    "main": "lib/index.js",
+    "main": "build/index.js",
     "engines": {
         "node": ">=6.13.0"
     },
     "scripts": {
         "start": "npm run build:dev-watch",
+        "build": "tsc",
         "build:dev-watch": "tsc --watch",
         "lint": "eslint src",
         "test:dev-watch": "npm run test -- --watch",

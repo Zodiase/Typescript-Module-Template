@@ -10,7 +10,7 @@
     "start": "npm run build:dev-watch",
     "build:dev-watch": "tsc --watch",
     "test:dev-watch": "mocha --require ts-node/register --watch --watch-extensions ts,spec.ts src/**/*.spec.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register src/**/*.spec.ts"
   },
   "author": "Xingchen Hong",
   "dependencies": {

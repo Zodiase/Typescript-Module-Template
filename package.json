@@ -11,6 +11,9 @@
         "build": "tsc",
         "build:dev-watch": "tsc --watch",
         "lint": "eslint src",
+        "format": "prettier --write .",
+        "check:format": "prettier --check .",
+        "check:types": "tsc --noEmit",
         "test:dev-watch": "npm run test -- --watch",
         "test": "jest"
     },
@@ -22,6 +25,7 @@
         "@typescript-eslint/parser": "^4.31.0",
         "@xch/prettier-config": "^0.0.1",
         "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
         "jest": "^27.1.1",
         "prettier": "2.3.2",
         "ts-jest": "^27.0.5",

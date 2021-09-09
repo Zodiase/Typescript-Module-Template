@@ -33,3 +33,7 @@ This document explains why certain dependencies are needed.
 -   `@xch/prettier-config`
 
     My preset for prettier.
+
+-   `eslint-config-prettier`
+
+    Turn off eslint rules that are already covered by prettier. `"prettier"` should be added as the last item in `"extends"` in eslint config.

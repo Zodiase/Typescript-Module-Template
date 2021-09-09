@@ -17,3 +17,11 @@ This document explains why certain dependencies are needed.
     Testing with Jest. `ts-jest` applies type-checking during tests.
 
     Without `ts-jest`, `jest` would need `babel` to parse TypeScript. `babel` does not care about type errors, however.
+
+- `eslint`
+
+    Code linting.
+
+- `@typescript-eslint/parser`, `@typescript-eslint/eslint-plugin`
+
+    Allow `eslint` to parse TypeScript and report the issues.
